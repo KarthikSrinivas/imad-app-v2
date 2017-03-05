@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 var articles={
     
-var article-one:{
+var articleone:{
     title:"pskarthikeyan1",
     con:`<p>
             serving the client 
