@@ -13,6 +13,8 @@ var articleone={
     
 };
 function createTemplate(data){
+    title=data.title;
+    con=data.con;
 
 var htmlTemplate=`
 <html>
