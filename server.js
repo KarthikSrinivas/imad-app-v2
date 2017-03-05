@@ -6,14 +6,14 @@ var app = express();
 app.use(morgan('combined'));
 var articles={
     
-var articleone:{
+var article-one:{
     title:"pskarthikeyan1",
     con:`<p>
             serving the client 
         </p>`
     
 },
-var articletwo:{
+var article-two:{
      title:"pskarthikeyan2",
     con:`<p>
             serving the client 
