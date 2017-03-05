@@ -14,7 +14,7 @@ var articleone:{
     
    
 },
-var article-two:{
+var articletwo:{
      title:"pskarthikeyan2",
     con:`<p>
             serving the client 
