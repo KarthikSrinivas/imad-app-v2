@@ -7,18 +7,18 @@ app.use(morgan('combined'));
 var articles={
     
 
-    "articleOne" :{
+    "article-one" :{
     title:"pskarthikeyan1",
     con:`<p>
             serving the client 
         </p>`
     
    },
-   "articleTwo":{
+   "article-two":{
        title:"PSKARTHIKEYAN",
        con:`<p>
        SERVING THE CLIENT</p>   `},
-       "articleThree":{
+       "articlethree":{
            title:"KARTHIK SRINIVAS",
            con:`<p>
            PRODUCT BASED
