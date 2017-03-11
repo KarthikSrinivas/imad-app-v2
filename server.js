@@ -77,7 +77,7 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/article',function(req,res){
     res.send("article 1 requested");
 });
-app.get('/test-db',function(req,res){
+app.get('/testdb',function(req,res){
     res.send("db  requested");
 });
 //var pool=new Pool(config);
