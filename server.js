@@ -25,7 +25,8 @@ var articles={
    "article-two":{
        title:"PSKARTHIKEYAN",
        con:`<p>
-       SERVING THE CLIENT</p>   `},
+       SERVING THE CLIENT</p>   
+        `},
        "articlethree":{
            title:"KARTHIK SRINIVAS",
            con:`<p>
