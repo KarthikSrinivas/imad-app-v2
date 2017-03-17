@@ -2,6 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
+var bodyParser = require('body-parser');
 var crypto=require('crypto');
 var config={
     user:'karthiksrinivas',
@@ -112,3 +113,7 @@ var port = 8080; // Use 8080 for local development because you might already hav
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+app.use(bodyParser.urlencoded({
+extended: true
+}));
+app.use(bodyParser.json());
