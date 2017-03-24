@@ -12,9 +12,18 @@
             Hello pskarthikeyan 
             <a href="ui/artilce-one.html">click here </a>
         </div>
-       <button id=1>click it</button>
+       <button id=1 onclick="myFunction()">count</button>
         <div id="demo">
             <h2 id="th">ghjgfj</h2>
         </div>
+        <script>
+        var counter=0;
+            function myfunction()
+            {
+                
+                counter=counter+1;
+                document.getElementById("th").innerHTML=(counter.toString());
+            }
+        </script>
     </body>
 </html>
