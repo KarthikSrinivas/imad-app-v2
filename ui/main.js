@@ -1,1 +1,6 @@
-var button=document.getElementById()
+var button=document.getElementById(1);
+button.onclick = function()
+{
+    couter=counter+1;
+    document.getElementById("demo").innerHTML=counter;
+}
