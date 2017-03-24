@@ -114,7 +114,7 @@ app.get("/hash/:input",function(req,res){
    res.send(hashed);
 });
 var names=[];
-app.get("/submit/",function(req,res){
+app.get("/submit",function(req,res){
    var name=req.query.name;
    names.push(name);
    res.send(JSON.stringify(names));
