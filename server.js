@@ -113,7 +113,7 @@ app.get('/ui/madi.png', function (req, res) {
 function hash(input,salt)
 { 
     var gas=crypto.pbkdf2Sync(input, salt, 100000, 512, 'sha512');
-    return gas;
+    return ["pbdkdf","10000",salt,hashed.toString('hex')].join('$');
     
 }
 app.get('/hash/:name',function(req,res)
