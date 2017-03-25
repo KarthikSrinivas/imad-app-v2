@@ -111,14 +111,15 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 function hash(input,salt)
-{
+{ 
+    var gas=crypto.pbkdf2Sync(input, salt, 100000, 512, 'sha512');
+    return gas;
     
-var hashe=crypto.pbkdf2Sync(input,salt,10000,512,'sha512');
-return hashe;
 }
-app.get("/hash/:input",function(req,res){
-   var hashed=hash(req.params.input,"this is some");
-   res.send(hashed);
+app.get('/hash/:name',function(req,res)
+{
+   var hashedstring=hash(req.params.name,"this is a salt value");
+   res.send("hashedstring");
 });
 
 
